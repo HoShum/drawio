@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-16T17:07:34.351Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="X5ImmNwPm_4f_bg1V3I6" version="21.6.8" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2023-08-16T17:27:46.780Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="5QWaTGXBCZiBebrgMk-Y" version="21.6.8" type="github" pages="7">
   <diagram name="Netty整体流程" id="2ty_EXpJwL_dRTHa1Sl7">
     <mxGraphModel dx="1709" dy="911" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -561,6 +561,17 @@
         </mxCell>
         <mxCell id="25XWJuS-SI7OHpFo61TY-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="1vPu80Mj09WMamoHqzGC-11" target="z3QTvDt6uoIv3KmLeIC3-2">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Cl4_4tQ4h9MI4qUCEk_q" name="ChannelHandler接口">
+    <mxGraphModel dx="1709" dy="911" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="F22gbY-cUVIz3MOmWRXJ-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;ChannelHandler&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ void handlerAdded(ChannelHandlerContext ctx)&lt;br&gt;+ void handlerRemoved(ChannelHandlerContext ctx)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ void execptionCaught(ChannelHandlerContext ctx, Throwable cause)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+          <mxGeometry x="531" y="81" width="407" height="112" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
