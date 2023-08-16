@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-16T17:27:46.780Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="5QWaTGXBCZiBebrgMk-Y" version="21.6.8" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2023-08-16T18:06:59.118Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="Ym2LmqNVm_Cxo52gl7JE" version="21.6.8" type="github" pages="7">
   <diagram name="Netty整体流程" id="2ty_EXpJwL_dRTHa1Sl7">
     <mxGraphModel dx="1709" dy="911" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -572,6 +572,63 @@
         <mxCell id="1" parent="0" />
         <mxCell id="F22gbY-cUVIz3MOmWRXJ-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;ChannelHandler&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ void handlerAdded(ChannelHandlerContext ctx)&lt;br&gt;+ void handlerRemoved(ChannelHandlerContext ctx)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ void execptionCaught(ChannelHandlerContext ctx, Throwable cause)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
           <mxGeometry x="531" y="81" width="407" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="F22gbY-cUVIz3MOmWRXJ-3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;ChannelInboundHandler&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;void channelRegistered(ChannelHandlerContext ctx)&lt;br&gt;+ void channelActive(ChannelHandlerContext ctx)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ void channelRead(ChannelHandlerContext ctx, Object msg)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;void channelReadComplete(ChannelHandlerContext ctx)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+          <mxGeometry x="148" y="292" width="383" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="F22gbY-cUVIz3MOmWRXJ-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;ChannelOutboundHandler&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;void bind(ChannelHandlerContext ctx, SocketAddress localAddress, ChannelPromise promise)&lt;br&gt;+&amp;nbsp;void connect(&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ChannelHandlerContext ctx, SocketAddress remoteAddress,&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; SocketAddress localAddress, ChannelPromise promise)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;void flush(ChannelHandlerContext ctx)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+          <mxGeometry x="916" y="282" width="369" height="181" as="geometry" />
+        </mxCell>
+        <mxCell id="F22gbY-cUVIz3MOmWRXJ-5" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;entryX=0.441;entryY=1.008;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.473;exitY=-0.023;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="F22gbY-cUVIz3MOmWRXJ-3" target="F22gbY-cUVIz3MOmWRXJ-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="334" y="217" as="sourcePoint" />
+            <mxPoint x="494" y="217" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F22gbY-cUVIz3MOmWRXJ-6" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;entryX=0.552;entryY=0.997;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="F22gbY-cUVIz3MOmWRXJ-4" target="F22gbY-cUVIz3MOmWRXJ-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="891" y="190" as="sourcePoint" />
+            <mxPoint x="1157" y="131" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F22gbY-cUVIz3MOmWRXJ-7" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;ChannelHandlerAdapter&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;boolean isSharable()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+          <mxGeometry x="535" y="467" width="349" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="F22gbY-cUVIz3MOmWRXJ-8" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="F22gbY-cUVIz3MOmWRXJ-7" target="F22gbY-cUVIz3MOmWRXJ-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="369" y="344" as="sourcePoint" />
+            <mxPoint x="750" y="249" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F22gbY-cUVIz3MOmWRXJ-13" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ChannelInboundHandlerAdapter&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;...&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+          <mxGeometry x="172" y="646" width="258" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="F22gbY-cUVIz3MOmWRXJ-14" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ChannelOutboundHandlerAdapter&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;...&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+          <mxGeometry x="1008" y="639" width="258" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="F22gbY-cUVIz3MOmWRXJ-15" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="F22gbY-cUVIz3MOmWRXJ-13" target="F22gbY-cUVIz3MOmWRXJ-7">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="535" y="881" as="sourcePoint" />
+            <mxPoint x="555" y="607" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F22gbY-cUVIz3MOmWRXJ-16" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="F22gbY-cUVIz3MOmWRXJ-14" target="F22gbY-cUVIz3MOmWRXJ-7">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="515" y="692.5" as="sourcePoint" />
+            <mxPoint x="909" y="608.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F22gbY-cUVIz3MOmWRXJ-17" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="F22gbY-cUVIz3MOmWRXJ-13" target="F22gbY-cUVIz3MOmWRXJ-3">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="195" y="568" as="sourcePoint" />
+            <mxPoint x="355" y="568" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F22gbY-cUVIz3MOmWRXJ-18" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="F22gbY-cUVIz3MOmWRXJ-14" target="F22gbY-cUVIz3MOmWRXJ-4">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1157" y="597" as="sourcePoint" />
+            <mxPoint x="1141" y="467" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
