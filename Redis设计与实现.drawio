@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-09-27T15:57:28.069Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="rCOhlXVFL5Ek-NdfMCav" version="21.8.0" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2023-09-28T10:33:24.958Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="GVhfh5_1GQa2U6Vr8CNN" version="21.8.0" type="github" pages="4">
   <diagram name="第2章 简单动态字符串" id="INwF0Nlo9MsbnrtQJhhU">
     <mxGraphModel dx="1841" dy="946" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.2" pageWidth="2336" pageHeight="1654" math="0" shadow="0">
       <root>
@@ -1435,6 +1435,16 @@
               <mxPoint x="1043" y="241" />
               <mxPoint x="1043" y="237" />
               <mxPoint x="1242" y="237" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qknAHmxnqdvIJyaAG43u-133" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.476;entryY=1.046;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;" edge="1" parent="1" source="qknAHmxnqdvIJyaAG43u-8" target="qknAHmxnqdvIJyaAG43u-111">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="542" y="577" />
+              <mxPoint x="542" y="713" />
+              <mxPoint x="1350" y="713" />
+              <mxPoint x="1350" y="618" />
             </Array>
           </mxGeometry>
         </mxCell>
